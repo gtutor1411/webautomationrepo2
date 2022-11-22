@@ -125,7 +125,7 @@ public class WebTests {
 
 	}
 
-	@Test(priority = 0, enabled = false)
+	@Test(priority = 0, enabled = true)
 	public void titleTest() {
 		boolean result = true;
 		ExtentTest test = report.startTest("Verify Title in browser");
@@ -149,7 +149,7 @@ public class WebTests {
 		}
 	}
 
-	@Test(priority = 1, dataProvider = "registerData", enabled = true)
+	@Test(priority = 1, dataProvider = "registerData", enabled = false)
 	public void registerTest(String fName, String lName, String email, String phone, String password) {
 		boolean result1 = true;
 		boolean result2 = true;
